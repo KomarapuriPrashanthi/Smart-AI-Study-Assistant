@@ -95,10 +95,3 @@ python -m streamlit run app.py
 
 ✅ Week 1 Completed  
 Core features implemented successfully.
-
----
-
-## 👩‍💻 Author
-
-Komarapuri Prashanthi  
-AI & ML Enthusiast
