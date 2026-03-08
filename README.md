@@ -1,89 +1,98 @@
 # 📚 Smart AI Study Assistant
 
-An AI-powered Study Assistant built using Streamlit and LangChain.
+An AI-powered Study Assistant built using **Streamlit, LangChain, and Groq API**.
 
-This application helps students:
-- Generate quizzes from study material
-- Create interactive flashcards
-- Generate audio summaries
-- Track study progress
+This application helps students learn smarter by generating quizzes, flashcards, and audio summaries from **text or uploaded PDF notes**, while also tracking their study progress.
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 ### 📝 Quiz Generator
-- Automatically generates MCQ-based quizzes
-- Instant score calculation
-- Stores previous attempts
+
+* Automatically generates MCQ-based quizzes from study material
+* Instant score calculation
+* Stores previous quiz attempts in database
 
 ### 🧠 Flashcards
-- Interactive card-style flashcards
-- Flip to reveal answers
-- Navigate between cards
+
+* Interactive card-style flashcards
+* Flip cards to reveal answers
+* Navigate between multiple cards
 
 ### 🔊 Audio Summary
-- Generates AI-powered summary
-- Text-to-speech integration
+
+* Generates AI-powered summary of study material
+* Converts summary into speech using text-to-speech
+
+### 📄 PDF Upload Support (Week 2)
+
+* Upload PDF study notes
+* Extracts text automatically
+* Generate quizzes, flashcards, and summaries from the PDF
 
 ### 📊 Study Progress Dashboard
-- Tracks total attempts
-- Calculates average score
-- Displays previous attempts history
+
+* Tracks total quiz attempts
+* Calculates average score
+* Displays previous attempt history
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-- Python
-- Streamlit
-- LangChain
-- Groq API
-- SQLite (for progress tracking)
-- dotenv
+* **Python**
+* **Streamlit**
+* **LangChain**
+* **Groq API**
+* **SQLite** (for progress tracking)
+* **dotenv**
+* **pypdf** (for PDF text extraction)
+* **gTTS** (for audio generation)
 
 ---
 
-## ⚙️ Installation & Setup
+# ⚙️ Installation & Setup
 
-1. Clone the repository:
+### 1️⃣ Clone the repository
 
 ```
 git clone https://github.com/KomarapuriPrashanthi/Smart-AI-Study-Assistant.git
 ```
 
-2. Navigate to the project folder:
+### 2️⃣ Navigate to project folder
 
 ```
 cd Smart-AI-Study-Assistant
 ```
 
-3. Create a virtual environment:
+### 3️⃣ Create virtual environment
 
 ```
 python -m venv venv
 ```
 
-4. Activate virtual environment:
+### 4️⃣ Activate virtual environment
 
 Windows:
+
 ```
 venv\Scripts\activate
 ```
 
-5. Install dependencies:
+### 5️⃣ Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-6. Create a `.env` file and add your Groq API key:
+### 6️⃣ Create `.env` file and add Groq API key
 
 ```
 GROQ_API_KEY=your_api_key_here
 ```
 
-7. Run the application:
+### 7️⃣ Run the application
 
 ```
 python -m streamlit run app.py
@@ -91,7 +100,26 @@ python -m streamlit run app.py
 
 ---
 
-## 📌 Project Status
+# 📌 Project Status
 
-✅ Week 1 Completed  
-Core features implemented successfully.
+✅ Week 1 Completed
+
+* Quiz generation
+* Flashcards
+* Audio summary
+* Study progress dashboard
+
+✅ Week 2 Completed
+
+* PDF upload support
+* Automatic text extraction from PDFs
+
+---
+
+# 📷 Future Improvements
+
+* Better quiz difficulty levels
+* Smarter flashcards
+* Study analytics dashboard
+* Multi-document support
+* Better UI for learning focus
