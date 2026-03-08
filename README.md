@@ -6,7 +6,7 @@ This application helps students learn smarter by generating quizzes, flashcards,
 
 ---
 
-# 🚀 Features
+## 🚀 Features
 
 ### 📝 Quiz Generator
 
@@ -39,40 +39,40 @@ This application helps students learn smarter by generating quizzes, flashcards,
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-* **Python**
-* **Streamlit**
-* **LangChain**
-* **Groq API**
-* **SQLite** (for progress tracking)
-* **dotenv**
-* **pypdf** (for PDF text extraction)
-* **gTTS** (for audio generation)
+* Python
+* Streamlit
+* LangChain
+* Groq API
+* SQLite (for progress tracking)
+* dotenv
+* pypdf (for PDF text extraction)
+* gTTS (for audio generation)
 
 ---
 
-# ⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 
 ```
 git clone https://github.com/KomarapuriPrashanthi/Smart-AI-Study-Assistant.git
 ```
 
-### 2️⃣ Navigate to project folder
+### 2. Navigate to the project folder
 
 ```
 cd Smart-AI-Study-Assistant
 ```
 
-### 3️⃣ Create virtual environment
+### 3. Create a virtual environment
 
 ```
 python -m venv venv
 ```
 
-### 4️⃣ Activate virtual environment
+### 4. Activate virtual environment
 
 Windows:
 
@@ -80,19 +80,19 @@ Windows:
 venv\Scripts\activate
 ```
 
-### 5️⃣ Install dependencies
+### 5. Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-### 6️⃣ Create `.env` file and add Groq API key
+### 6. Create a `.env` file and add your Groq API key
 
 ```
 GROQ_API_KEY=your_api_key_here
 ```
 
-### 7️⃣ Run the application
+### 7. Run the application
 
 ```
 python -m streamlit run app.py
@@ -100,7 +100,7 @@ python -m streamlit run app.py
 
 ---
 
-# 📌 Project Status
+## 📌 Project Status
 
 ✅ Week 1 Completed
 
@@ -116,10 +116,10 @@ python -m streamlit run app.py
 
 ---
 
-# 📷 Future Improvements
+## 📷 Future Improvements
 
 * Better quiz difficulty levels
 * Smarter flashcards
 * Study analytics dashboard
 * Multi-document support
-* Better UI for learning focus
+* Better UI for distraction-free studying
