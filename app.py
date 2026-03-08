@@ -3,7 +3,9 @@ import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
+
 import re
+from pypdf import PdfReader
 
 import sqlite3
 from datetime import datetime
@@ -122,7 +124,7 @@ llm = ChatGroq(
 )
 
 st.markdown("<h1 style='text-align:center;'>📚 Smart AI Study Assistant</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align:center; color:gray;'>Your Calm AI Study Companion</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center; color:gray;'>Your AI Study Companion</p>", unsafe_allow_html=True)
 
 menu = st.sidebar.selectbox(
     "Choose Feature",
@@ -130,6 +132,17 @@ menu = st.sidebar.selectbox(
 )
 
 user_input = st.text_area("Paste your study material here:")
+
+uploaded_file = st.file_uploader("Or upload a PDF file", type=["pdf"])
+
+if uploaded_file is not None:
+    pdf_reader = PdfReader(uploaded_file)
+    pdf_text = ""
+
+    for page in pdf_reader.pages:
+        pdf_text += page.extract_text()
+
+    user_input = pdf_text[:4000]
 
 if menu == "Quiz":
 
