@@ -179,14 +179,7 @@ Sensitive files are excluded from GitHub:
 
 ---
 
-## ⭐ Future Enhancements
 
-* Multi-user support
-* Cloud deployment
-* Voice-based interaction
-* Advanced analytics dashboard
-* AI-generated study roadmaps
-* Mobile-friendly version
 
 ```
 ```
