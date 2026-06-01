@@ -1,46 +1,192 @@
-# 🎓 AI Study Assistant v2
+# 🎓 Smart AI Study Assistant
 
-## Quick Start
+An AI-powered study companion built using Python, Streamlit, Groq LLM, and SQLite that helps students learn more effectively from their study materials.
 
-### 1. Install
-```
-pip install streamlit groq==0.4.2 PyMuPDF python-docx plotly pandas Pillow python-dotenv
-```
-
-### 2. Add your Groq API key
-Open `.env` and replace:
-```
-GROQ_API_KEY=your_groq_api_key_here
-```
-Or paste it directly in **Settings** inside the app.
-
-Get a free key at: https://console.groq.com
-
-### 3. Run
-```
-streamlit run app.py
-```
-
-Open http://localhost:8501
+The application allows users to upload documents, interact with them through AI-powered conversations, generate quizzes, create flashcards, summarize content, track learning progress, and plan study sessions — all within a single platform.
 
 ---
 
-## Files
-- `app.py` — main app (all 9 pages)
-- `database.py` — SQLite storage
-- `ai_functions.py` — all Groq AI calls
-- `groq_client.py` — Groq client (version-safe)
-- `file_reader.py` — PDF/DOCX text extraction
-- `uploads/` — your uploaded files
-- `study.db` — local database (auto-created)
+## 🚀 Features
 
-## What's fixed in v2
-- Duplicate upload bug fixed
-- Upload box wider and less cramped
-- Chat works correctly
-- Quiz: all questions shown at once, submit at end, full review with correct/wrong highlighting
-- Flashcards: flip to see answer, Right/Wrong buttons with session score
-- Summaries: no blank box error
-- Progress: 100% real data from your activity, no random numbers
-- Settings: clean, no confusing options
-- Groq client fixed for all versions (no more 'proxies' error)
+### 📁 Document Management
+
+* Upload and organize study materials
+* Support for PDF and DOCX documents
+* Store and manage learning resources in one place
+
+### 💬 Chat with PDF
+
+* Ask questions directly from uploaded documents
+* Context-aware AI responses
+* Instant doubt clarification from study material
+
+### 🧠 AI Quiz Generator
+
+* Automatically generate quizzes from uploaded content
+* Multiple-choice questions
+* Detailed answer review after submission
+* Performance evaluation and scoring
+
+### 🃏 Flashcards
+
+* Generate flashcards from study materials
+* Interactive flip-card learning experience
+* Right/Wrong tracking system
+* Session-based performance monitoring
+
+### 📝 Smart Summaries
+
+* Generate concise study notes
+* Extract key concepts and important points
+* Quick revision support
+
+### 📅 Study Planner
+
+* Create and manage study plans
+* Organize learning schedules
+* Improve study consistency
+
+### 📊 Progress Tracking
+
+* Monitor learning activity
+* Quiz performance analytics
+* Flashcard statistics
+* Document usage insights
+
+### 🎨 Modern User Interface
+
+* Clean and intuitive dashboard
+* Easy navigation between modules
+* Student-friendly design
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* Streamlit
+
+### Backend
+
+* Python
+
+### Database
+
+* SQLite
+
+### AI Model
+
+* Groq LLM
+
+### Libraries
+
+* PyMuPDF
+* python-docx
+* pandas
+* plotly
+* Pillow
+* python-dotenv
+
+---
+
+## 📂 Project Structure
+
+```text
+Smart-AI-Study-Assistant
+│
+├── app.py
+├── ai_functions.py
+├── database.py
+├── file_reader.py
+├── groq_client.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+### File Description
+
+| File             | Purpose                                   |
+| ---------------- | ----------------------------------------- |
+| app.py           | Main Streamlit application                |
+| ai_functions.py  | AI-powered features and Groq interactions |
+| database.py      | SQLite database operations                |
+| file_reader.py   | PDF and DOCX processing                   |
+| groq_client.py   | Groq API configuration                    |
+| requirements.txt | Project dependencies                      |
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/KomarapuriPrashanthi/Smart-AI-Study-Assistant.git
+cd Smart-AI-Study-Assistant
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file:
+
+```env
+GROQ_API_KEY=YOUR_API_KEY
+```
+
+Get your API key from the Groq Console.
+
+### 4. Run Application
+
+```bash
+python -m streamlit run app.py
+```
+
+Open:
+
+```text
+http://localhost:8501
+```
+
+---
+
+## 🎯 Use Cases
+
+* Students preparing for exams
+* Quick revision before tests
+* Learning from PDF notes
+* Generating practice quizzes
+* Building flashcard-based study routines
+* Tracking study performance
+
+---
+
+## 🔒 Security
+
+Sensitive files are excluded from GitHub:
+
+* `.env`
+* `study.db`
+* `uploads/`
+* `__pycache__/`
+
+---
+
+## ⭐ Future Enhancements
+
+* Multi-user support
+* Cloud deployment
+* Voice-based interaction
+* Advanced analytics dashboard
+* AI-generated study roadmaps
+* Mobile-friendly version
+
+```
+```
