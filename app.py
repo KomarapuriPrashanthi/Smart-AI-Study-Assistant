@@ -329,6 +329,7 @@ def page_documents():
         key = f"uploaded_{uploaded.name}_{uploaded.size}"
         if key not in st.session_state:
             st.session_state[key] = True
+            os.makedirs("uploads", exist_ok=True)
             save_path = os.path.join("uploads", f"{uid()}_{uploaded.name}")
             with open(save_path, "wb") as f:
                 f.write(uploaded.getbuffer())
@@ -898,7 +899,7 @@ def page_progress():
             st.markdown(f"<div style='padding:6px 0;border-bottom:1px solid #F0EAE0;'>🟤 <b>{act}</b>{det} <span style='color:{MUTED};float:right;font-size:.82rem;'>{when}</span></div>", unsafe_allow_html=True)
     else:
         st.info("No activity logged yet.")
-    st.markdown("</div>", unsafe_allow_html=True)
+    st.markdown("</div>", unsafe_allow_html=True) 
 
 
 # ══ ROUTER ════════════════════════════════════════════════════════════════════
