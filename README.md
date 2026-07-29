@@ -187,13 +187,6 @@ Watch the demo video here:
 [Demo Video](https://github.com/user-attachments/assets/0c5f8ae4-878a-4040-a20f-876b9503f3f9)
 
 
----
-
-## 🌐 Live Demo
-
-Try the deployed application here:
-
-🔗 https://smart-ai-study-assistant-gajjwcryiavco2v8bclkttps.streamlit.app
 
 
 
